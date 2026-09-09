@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Ganesh Khamkar | Web-Developer</title>
+  <meta name="description" content="Personal portfolio of Ganesh Khamkar, Web-Developer specializing in modern web applications, clean code architecture, and AI-assisted workflows." />
+  <meta name="author" content="Ganesh Khamkar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="[YOUR PORTFOLIO CANONICAL URL]" />
+  <meta property="og:title" content="Ganesh Khamkar | Web-Developer" />
+  <meta property="og:description" content="Web-Developer building fast, maintainable applications with JavaScript, modern web standards, and AI tooling." />
+  <meta property="og:image" content="[OG IMAGE URL]" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ganesh Khamkar | Web-Developer" />
+  <meta name="twitter:description" content="Web-Developer building fast, maintainable applications with JavaScript, modern web standards, and AI tooling." />
+  <meta name="twitter:image" content="[OG IMAGE URL]" />
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-main">
+
+  <!-- Skip to Main Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ganesh Khamkar Home">
+        <span class="logo-code">&lt;</span>GK<span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#ai-tech" class="nav-link">AI &amp; Tech</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- External Links & CTA -->
+      <div class="nav-actions">
+        <a href="https://github.com/GANU-7" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Profile">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ganesh-khamkar-2660ab3a9/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn Profile">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="[RESUME URL]" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Resume</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#ai-tech" class="mobile-nav-link">AI &amp; Tech</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-nav-divider"></li>
+        <li><a href="[RESUME URL]" target="_blank" rel="noopener noreferrer" class="mobile-nav-link text-accent">View Resume</a></li>
+        <li><a href="https://github.com/GANU-7" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">GitHub</a></li>
+        <li><a href="[LINKEDIN PROFILE URL]" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">LinkedIn</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="system-status">
+            <span class="status-indicator"></span>
+            <span class="status-text font-mono">Available for development projects</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-white">Ganesh Khamkar</span>.<br />
+            <span class="hero-subtitle-gradient">Web-Developer.</span>
+          </h1>
+          <p class="hero-lead">
+            I build responsive, reliable web solutions with clean code architecture and accelerate production with modern AI workflows.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+          <div class="hero-social-links">
+            <span class="font-mono text-muted text-sm">Connect:</span>
+            <a href="[GITHUB PROFILE URL]" target="_blank" rel="noopener noreferrer" class="hero-link font-mono">GitHub</a>
+            <span class="dot-sep" aria-hidden="true">•</span>
+            <a href="" target="_blank" rel="noopener noreferrer" class="hero-link font-mono">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Interactive Developer Card / Terminal -->
+        <aside class="hero-preview" aria-label="Developer Information Card">
+          <div class="code-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title font-mono">ganesh.config.js</span>
+              <button class="terminal-copy-btn" id="copyTerminalBtn" aria-label="Copy code snippet">Copy</button>
+            </div>
+            <div class="terminal-body font-mono">
+              <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Ganesh Khamkar"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Web-Developer"</span>,
+  <span class="code-prop">coreStack</span>: [<span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"MySQL"</span>],
+  <span class="code-prop">aiWorkflows</span>: [<span class="code-string">"Gemini"</span>, <span class="code-string">"Claude"</span>, <span class="code-string">"ChatGPT"</span>],
+  <span class="code-prop">focus</span>: <span class="code-string">"Building performant, structured web solutions"</span>,
+  <span class="code-prop">status</span>: <span class="code-string">"Ready to build"</span>
+};
+
+<span class="code-comment">// Execute build routine</span>
+<span class="code-function">initiateProject</span>(developer);</code></pre>
+            </div>
+            <div class="terminal-footer font-mono">
+              <span class="terminal-cursor">$</span> <span id="terminal-typed-text">ready --env=production</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding border-top-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">Background</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a web developer with a direct focus on core web technologies and structured execution. Rather than relying on unnecessary layers of tooling, I focus on understanding how the web works at its base layer: clean semantic markup, modular CSS architecture, and deliberate, event-driven JavaScript.
+            </p>
+            <p>
+              My development philosophy is practical: build reliable interfaces, write clean code that solves real problems, and leverage modern AI platforms (Claude, Gemini, ChatGPT) as technical force-multipliers for rapid prototyping, logic validation, and workflow automation.
+            </p>
+            <div class="about-milestones">
+              <div class="milestone-item">
+                <span class="milestone-label font-mono">Focus Areas:</span>
+                <span class="milestone-value">Frontend Engineering, Database Modeling, AI-Driven Development</span>
+              </div>
+              <div class="milestone-item">
+                <span class="milestone-label font-mono">Current Goal:</span>
+                <span class="milestone-value">[YOUR CURRENT PROFESSIONAL GOAL / TARGET ROLE]</span>
+              </div>
+              <div class="milestone-item">
+                <span class="milestone-label font-mono">Based In:</span>
+                <span class="milestone-value">[YOUR LOCATION / TIME ZONE]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h3 class="highlight-title font-mono">&gt; Semantic &amp; Resilient</h3>
+              <p class="highlight-desc">
+                Building functional websites with standards-compliant HTML and accessible structure, ensuring high cross-browser compatibility.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <h3 class="highlight-title font-mono">&gt; Dynamic JavaScript</h3>
+              <p class="highlight-desc">
+                Implementing clean asynchronous operations, dynamic DOM handling, API integrations, and client-side data flows without unnecessary framework dependencies.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <h3 class="highlight-title font-mono">&gt; Relational Data</h3>
+              <p class="highlight-desc">
+                Structuring relational tables and crafting query logic with MySQL to back web features with consistent, clean data storage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding border-top-subtle bg-surface-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Technologies and tools I actively use in my development workflow.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming & Frontend -->
+          <div class="skill-category-card">
+            <div class="category-header font-mono">
+              <span class="cat-icon">&lt;/&gt;</span>
+              <h3 class="cat-title">Programming &amp; Frontend</h3>
+            </div>
+            <p class="cat-desc">Building responsive, standards-compliant web user interfaces.</p>
+            <ul class="skill-tag-list" aria-label="Frontend skills list">
+              <li class="skill-pill">
+                <span class="pill-name">HTML5</span>
+                <span class="pill-type font-mono">Markup</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">CSS3</span>
+                <span class="pill-type font-mono">Styling</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">JavaScript</span>
+                <span class="pill-type font-mono">ES6+</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-category-card">
+            <div class="category-header font-mono">
+              <span class="cat-icon">[db]</span>
+              <h3 class="cat-title">Database</h3>
+            </div>
+            <p class="cat-desc">Managing relational databases, schema design, and queries.</p>
+            <ul class="skill-tag-list" aria-label="Database skills list">
+              <li class="skill-pill">
+                <span class="pill-name">MySQL</span>
+                <span class="pill-type font-mono">RDBMS</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="category-header font-mono">
+              <span class="cat-icon">{tools}</span>
+              <h3 class="cat-title">Tools &amp; Platforms</h3>
+            </div>
+            <p class="cat-desc">Development environments, debugging, and productivity tools.</p>
+            <ul class="skill-tag-list" aria-label="Tools and platforms list">
+              <li class="skill-pill">
+                <span class="pill-name">VSCode</span>
+                <span class="pill-type font-mono">IDE</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">Gemini</span>
+                <span class="pill-type font-mono">AI Tool</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">Claude</span>
+                <span class="pill-type font-mono">AI Tool</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">ChatGPT</span>
+                <span class="pill-type font-mono">AI Tool</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- AI & Automation -->
+          <div class="skill-category-card">
+            <div class="category-header font-mono">
+              <span class="cat-icon">⚡</span>
+              <h3 class="cat-title">AI &amp; Automation</h3>
+            </div>
+            <p class="cat-desc">Leveraging large language models for code synthesis, refactoring, and logic testing.</p>
+            <ul class="skill-tag-list" aria-label="AI and automation skills list">
+              <li class="skill-pill">
+                <span class="pill-name">Gemini</span>
+                <span class="pill-type font-mono">Workflow</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">Claude</span>
+                <span class="pill-type font-mono">Code Refactor</span>
+              </li>
+              <li class="skill-pill">
+                <span class="pill-name">ChatGPT</span>
+                <span class="pill-type font-mono">Automation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding border-top-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">Execution</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Practical web applications built with code and AI-assisted workflows.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-project-id="project-1">
+            <div class="project-card-banner">
+              <div class="project-badge font-mono">Web Application</div>
+              <div class="project-screen-mock font-mono">
+                <code>&lt;app-preview id="project-1" /&gt;</code>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-title">[PROJECT NAME 1]</h3>
+              <p class="project-summary">
+                [A concise 2-line summary of what this project accomplishes, the core problem it solves, and how it behaves.]
+              </p>
+              <div class="project-tech-tags font-mono">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-project-1">View Details</button>
+                <a href="[LIVE DEMO URL 1]" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Live Demo &rarr;</a>
+                <a href="[GITHUB URL 1]" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm font-mono">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-project-id="project-2">
+            <div class="project-card-banner">
+              <div class="project-badge font-mono">AI-Assisted Tool</div>
+              <div class="project-screen-mock font-mono">
+                <code>&lt;app-preview id="project-2" /&gt;</code>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-title">[PROJECT NAME 2]</h3>
+              <p class="project-summary">
+                [A concise 2-line summary of how this tool leverages AI or prompt automation to solve a specific development or business task.]
+              </p>
+              <div class="project-tech-tags font-mono">
+                <span>JavaScript</span>
+                <span>Gemini API / Claude</span>
+                <span>CSS3</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-project-2">View Details</button>
+                <a href="[LIVE DEMO URL 2]" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Live Demo &rarr;</a>
+                <a href="[GITHUB URL 2]" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm font-mono">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-project-id="project-3">
+            <div class="project-card-banner">
+              <div class="project-badge font-mono">Database / Full-Stack Concept</div>
+              <div class="project-screen-mock font-mono">
+                <code>&lt;app-preview id="project-3" /&gt;</code>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-title">[PROJECT NAME 3]</h3>
+              <p class="project-summary">
+                [A concise description of this data-backed web project handling relational records, form persistence, and dynamic rendering.]
+              </p>
+              <div class="project-tech-tags font-mono">
+                <span>HTML</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-project-3">View Details</button>
+                <a href="[LIVE DEMO URL 3]" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Live Demo &rarr;</a>
+                <a href="[GITHUB URL 3]" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm font-mono">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI & Technology Dedicated Section -->
+    <section id="ai-tech" class="section-padding border-top-subtle bg-surface-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">Acceleration</span>
+          <h2 class="section-title">AI &amp; Technology</h2>
+          <p class="section-desc">How I integrate modern AI tools directly into daily web development.</p>
+        </div>
+
+        <div class="ai-grid">
+          <div class="ai-card">
+            <div class="ai-card-badge font-mono">Workflow 01</div>
+            <h3 class="ai-card-title">AI-Assisted Development</h3>
+            <p class="ai-card-desc">
+              Using models like Claude and Gemini for algorithm design, rapid DOM boilerplate creation, and edge-case testing before shipping code.
+            </p>
+            <div class="ai-tools-list font-mono">
+              <span>Claude</span>
+              <span>Gemini</span>
+              <span>ChatGPT</span>
+            </div>
+          </div>
+
+          <div class="ai-card">
+            <div class="ai-card-badge font-mono">Workflow 02</div>
+            <h3 class="ai-card-title">Logic Validation &amp; Debugging</h3>
+            <p class="ai-card-desc">
+              Utilizing prompt-guided code reviews to identify SQL query bottlenecks, syntax errors, and JavaScript asynchronous promise rejections.
+            </p>
+            <div class="ai-tools-list font-mono">
+              <span>ChatGPT</span>
+              <span>VSCode</span>
+            </div>
+          </div>
+
+          <div class="ai-card">
+            <div class="ai-card-badge font-mono">Workflow 03</div>
+            <h3 class="ai-card-title">Content &amp; Workflow Automation</h3>
+            <p class="ai-card-desc">
+              Constructing structured prompts and automated text transforms to process dynamic input data for web projects.
+            </p>
+            <div class="ai-tools-list font-mono">
+              <span>Gemini</span>
+              <span>Prompting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section-padding border-top-subtle">
+      <div class="container">
+        <div class="experience-education-grid">
+          <!-- Experience Timeline -->
+          <div class="timeline-column">
+            <div class="section-header">
+              <span class="section-tag font-mono">Career</span>
+              <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="timeline">
+              <!-- Experience Entry 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date font-mono">[START DATE] — [END DATE / PRESENT]</span>
+                  <h3 class="timeline-role">[ROLE / TITLE]</h3>
+                  <h4 class="timeline-company font-mono">[COMPANY / CLIENT / FREELANCE]</h4>
+                  <p class="timeline-desc">
+                    [Key responsibility: built web layouts, wrote structured JavaScript features, integrated relational data via MySQL, or automated developer workflows.]
+                  </p>
+                  <div class="timeline-tags font-mono">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>[TECH]</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience Entry 2 (Placeholder) -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date font-mono">[START DATE] — [END DATE]</span>
+                  <h3 class="timeline-role">[PREVIOUS ROLE / WEB DEVELOPMENT INTERNSHIP]</h3>
+                  <h4 class="timeline-company font-mono">[ORGANIZATION NAME]</h4>
+                  <p class="timeline-desc">
+                    [Key responsibility: maintained existing codebases, debugged frontend views, authored clean reusable components, and performed testing.]
+                  </p>
+                  <div class="timeline-tags font-mono">
+                    <span>JavaScript</span>
+                    <span>VSCode</span>
+                    <span>[TECH]</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Credentials -->
+          <div class="timeline-column">
+            <div class="section-header">
+              <span class="section-tag font-mono">Foundation</span>
+              <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="timeline">
+              <!-- Education Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date font-mono">[YEAR GRADUATED / DURATION]</span>
+                  <h3 class="timeline-role">[DEGREE / COURSE / DIPLOMA]</h3>
+                  <h4 class="timeline-company font-mono">[INSTITUTION NAME]</h4>
+                  <p class="timeline-desc">
+                    [Relevant coursework or highlights: Computer Applications, Web Programming, Data Structures, Relational Databases.]
+                  </p>
+                </div>
+              </div>
+
+              <!-- Education / Certification Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date font-mono">[YEAR]</span>
+                  <h3 class="timeline-role">[RELEVANT CERTIFICATION / COURSEWORK]</h3>
+                  <h4 class="timeline-company font-mono">[ISSUING PLATFORM / ACADEMY]</h4>
+                  <p class="timeline-desc">
+                    [Core competencies covered: JavaScript Algorithms, Modern HTML/CSS Standards, Database Queries.]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="section-padding border-top-subtle bg-surface-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">Open code</span>
+          <h2 class="section-title">GitHub Repositories</h2>
+          <p class="section-desc">Explore my public source code, scripts, and experiments.</p>
+        </div>
+
+        <div class="github-grid">
+          <!-- Repo Card 1 -->
+          <a href="[GITHUB REPO 1 URL]" target="_blank" rel="noopener noreferrer" class="repo-card">
+            <div class="repo-header">
+              <span class="repo-icon font-mono">repo/</span>
+              <h3 class="repo-title">[REPOSITORY-NAME-1]</h3>
+            </div>
+            <p class="repo-desc">
+              [Repository description detailing the project purpose, architecture, and code layout.]
+            </p>
+            <div class="repo-meta font-mono">
+              <span class="repo-lang"><span class="lang-dot js-dot"></span>JavaScript</span>
+              <span class="repo-link-action">View Code &nearr;</span>
+            </div>
+          </a>
+
+          <!-- Repo Card 2 -->
+          <a href="[GITHUB REPO 2 URL]" target="_blank" rel="noopener noreferrer" class="repo-card">
+            <div class="repo-header">
+              <span class="repo-icon font-mono">repo/</span>
+              <h3 class="repo-title">[REPOSITORY-NAME-2]</h3>
+            </div>
+            <p class="repo-desc">
+              [Repository description detailing MySQL database connection, CRUD logic, and interface.]
+            </p>
+            <div class="repo-meta font-mono">
+              <span class="repo-lang"><span class="lang-dot html-dot"></span>HTML/CSS</span>
+              <span class="repo-link-action">View Code &nearr;</span>
+            </div>
+          </a>
+
+          <!-- Repo Card 3 -->
+          <a href="[GITHUB REPO 3 URL]" target="_blank" rel="noopener noreferrer" class="repo-card">
+            <div class="repo-header">
+              <span class="repo-icon font-mono">repo/</span>
+              <h3 class="repo-title">[REPOSITORY-NAME-3]</h3>
+            </div>
+            <p class="repo-desc">
+              [Repository description of experiments, scripts, or AI prompt chains and helper utilities.]
+            </p>
+            <div class="repo-meta font-mono">
+              <span class="repo-lang"><span class="lang-dot js-dot"></span>JavaScript</span>
+              <span class="repo-link-action">View Code &nearr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="github-cta-banner">
+          <div>
+            <h3 class="cta-banner-title">Check out more on GitHub</h3>
+            <p class="cta-banner-sub">Review my commit activity, branches, and code repositories.</p>
+          </div>
+          <a href="https://github.com/GANU-7" target="_blank" rel="noopener noreferrer" class="btn btn-primary font-mono">Visit @GANU-7</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Banner Section -->
+    <section class="resume-cta-section border-top-subtle">
+      <div class="container text-center">
+        <span class="section-tag font-mono">Documentation</span>
+        <h2 class="section-title">Looking for my full background?</h2>
+        <p class="section-desc max-w-md mx-auto">
+          Download or view my formal resume outlining my developer history, technical capabilities, and verified qualifications.
+        </p>
+        <div class="resume-buttons">
+          <a href="[RESUME URL]" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Resume</a>
+          <a href="[RESUME DOWNLOAD URL / PDF]" download class="btn btn-outline">Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding border-top-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-mono">Initiate contact</span>
+          <h2 class="section-title">Have a project in mind?</h2>
+          <p class="section-desc">Reach out directly for freelance contracts, full-time positions, or web development work.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details -->
+          <div class="contact-info-panel">
+            <h3 class="panel-heading">Direct Channels</h3>
+            <p class="panel-text">
+              I am open to discussions on frontend systems, web development contracts, and technical collaborations.
+            </p>
+
+            <div class="contact-channel-list font-mono">
+              <div class="channel-item">
+                <span class="channel-label">Email:</span>
+                <a href="mailto:khamkarganesh4141@gmail.com" class="channel-value">khamkarganesh4141@gmail.com</a>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">GitHub:</span>
+                <a href="https://github.com/GANU-7" target="_blank" rel="noopener noreferrer" class="channel-value">https://github.com/GANU-7</a>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/ganesh-khamkar-2660ab3a9/" target="_blank" rel="noopener noreferrer" class="channel-value">https://www.linkedin.com/in/ganesh-khamkar-2660ab3a9/</a>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">Location:</span>
+                <span class="channel-value">Pune, Maharastra, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <!-- Replace action with your Formspree/backend endpoint when ready -->
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label font-mono">Name <span class="required-star">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required />
+                <span class="form-error font-mono" id="name-error" role="alert">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label font-mono">Email <span class="required-star">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@domain.com" required />
+                <span class="form-error font-mono" id="email-error" role="alert">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label font-mono">Message <span class="required-star">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Project scope, timeline, and requirements..." required></textarea>
+                <span class="form-error font-mono" id="message-error" role="alert">Message must be at least 15 characters.</span>
+              </div>
+
+              <!-- State Messages -->
+              <div class="form-status-message font-mono" id="form-status" role="status" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary w-full" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer border-top-subtle">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand font-mono">Ganesh Khamkar</span>
+        <span class="footer-role">Web-Developer</span>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul class="footer-nav-list font-mono">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#ai-tech">AI &amp; Tech</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-right font-mono">
+        <a href="https://github.com/GANU-7" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ganesh-khamkar-2660ab3a9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="copyright-notice">&copy; <span id="current-year"></span> Ganesh Khamkar. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal / Case Study Overlay -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <div class="modal-content" id="modal-dynamic-content">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
